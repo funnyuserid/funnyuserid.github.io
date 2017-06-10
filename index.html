@@ -64,12 +64,10 @@ $(document).on('scroll', function (e) { updateColor(); });
   var player;
   player = new YT.Player('muteYouTubeVideoPlayer', {
     videoId: 'ScNNfyq3d_w', // YouTube Video ID
-    width: 560,               // Player width (in px)
-    height: 316,              // Player height (in px)
     playerVars: {
       autoplay: 1,        // Auto-play the video on load
       controls: 0,        // Show pause/play buttons in player
-      showinfo: 1,        // Hide the video title
+      showinfo: 0,        // Hide the video title
       modestbranding: 1,  // Hide the Youtube Logo
       loop: 1,            // Run the video in a loop
       fs: 1,              // Hide the full screen button
