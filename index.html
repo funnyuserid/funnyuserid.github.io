@@ -78,10 +78,25 @@ $(document).on('scroll', function (e) { updateColor(); });
     events: {
       onReady: function(e) {
         e.target.mute();
+    	vidRescale();
+
       }
+
     }
   });
  }
+function vidRescale(){
+
+    var w = $(window).width()+200,
+    h = $(window).height()+200;
+
+    if (w/h > 16/9){
+    player.setSize(w, w/16*9);
+    }
+    else {
+    player.setSize(h/9*16, h);
+    }
+}
 </script>
 
       <br/>
