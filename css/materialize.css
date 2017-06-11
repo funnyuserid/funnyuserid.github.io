@@ -4379,6 +4379,7 @@ nav .input-field label.active i {
 
 .navbar-fixed nav {
   position: fixed;
+    display:block;
 }
 
 @media only screen and (min-width: 601px) {
@@ -4392,6 +4393,10 @@ nav .input-field label.active i {
   .navbar-fixed {
     height: 64px;
   }
+    .navbar-absolute
+    {
+       height: 64px; 
+    }
 }
 
 @font-face {
