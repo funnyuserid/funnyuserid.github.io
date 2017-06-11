@@ -60,12 +60,17 @@
             <a class="brand-logo center" id="main-logo">Header</a>
         </nav>
     </div>
-    <div class="video-container responsive-video ">
+    <div class="video-container responsive-video">
         <div id="muteYouTubeVideoPlayer" style="pointer-events:none;"></div>
     </div>
+    <!-- Rest of the page starts here -->
+        <div class="row white">
+            <div class="s4 m4 l4 xl4 offset-s4 offset-m4 offset-l4 offset-xl4">
+                <p>CHECKING THE CONTENT</p>
+            </div>
+        </div>
     
-    
-        <!-- Scripts for youtube video embedding -->
+        <!-- Scripts for youtube video embedding DO NOT MODIFY-->
         <script async src="https://www.youtube.com/iframe_api"></script>
         <script>
         function onYouTubeIframeAPIReady() 
@@ -75,16 +80,16 @@
             {
                 videoId: '5gF4tyf-zVo', // YouTube Video ID
                 playerVars: {
-      autoplay: 1,        // Auto-play the video on load
-      controls: 0,        // Show pause/play buttons in player
-      showinfo: 0,        // Hide the video title
-      modestbranding: 1,  // Hide the Youtube Logo
-      loop: 1,            // Run the video in a loop
-      fs: 1,              // Hide the full screen button
-      cc_load_policy: 1, // Hide closed captions
-      iv_load_policy: 1,  // Hide the Video Annotations
-      autohide: 1         // Hide video controls when playing
-    },
+                autoplay: 1,        // Auto-play the video on load
+                controls: 0,        // Show pause/play buttons in player
+                showinfo: 0,        // Hide the video title
+                modestbranding: 1,  // Hide the Youtube Logo
+                loop: 1,            // Run the video in a loop
+                fs: 1,              // Hide the full screen button
+                cc_load_policy: 1, // Hide closed captions
+                iv_load_policy: 1,  // Hide the Video Annotations
+                autohide: 1         // Hide video controls when playing
+                },
                 events: 
                 {
                 onReady: function(e) 

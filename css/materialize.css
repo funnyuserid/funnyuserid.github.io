@@ -4379,7 +4379,7 @@ nav .input-field label.active i {
 
 .navbar-fixed nav {
   position: fixed;
-    display:block;
+z-index: 997;
 }
 
 @media only screen and (min-width: 601px) {
