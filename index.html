@@ -15,7 +15,6 @@
     <script type="text/javascript" src="js/jquery.color-2.1.2.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/init.js"></script>
     <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
 
     <script>
@@ -47,8 +46,7 @@
             $("#main-logo").addClass("white-text");
 
         }
-        var myVideo =  iframe.getElementById('video1'); 
-        myVideo.mute();
+      
     }
     </script>
     
@@ -110,12 +108,12 @@
                 onReady: function(e) 
                         {
                             e.target.mute();
-                            vidRescale();
+                            vidRescale(player);
                         }
                 }
             });
         }
-        function vidRescale()
+        function vidRescale(player)
         {
             var w = $(window).width()+200,
             h = $(window).height()+200;
