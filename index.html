@@ -1,103 +1,231 @@
 <!DOCTYPE html>
-<html lang='en'>
-<header>
-    <meta charset="utf-8">
-    <title>Aura CR</title>
-    <!-- Material Design CSS Declaration Start-->
-    <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- Material Design CSS Declaration End-->
-    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/jquery.color-2.1.2.js"></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
-
-    <script>
-    
-        $(document).ready(function()
-                            {
-                            $(document).on('scroll', function (e) { updateColor(); });
-                            });
-    function updateColor() 
-    {
-        var o = $(document).scrollTop() / 30;
-        if (o > 1.000) 
-        { 
-            $("nav").removeClass("transparent-nav"); 
-            $("nav").addClass( "white-nav" );
-            $("#main-logo").removeClass("white-text");
-            $("#main-logo").addClass("black-text");
-
-        }
-        else 
-        {
-            $("nav").removeClass( "white-nav" );
-            $("nav").addClass( "transparent-nav" );
-            $("#main-logo").removeClass("black-text");
-            $("#main-logo").addClass("white-text");
-
-        }
-      
-    }
-    </script>
-    
-    
-</header>
-<main class="black" >
-    <div class="navbar-fixed" id="top">
-        <nav class="transparent-nav z-depth-0"> <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-            <a class="brand-logo center" id="main-logo">Header</a>
-        </nav>
-    </div>
-    <div class="video-container responsive-video">
-        <div id="muteYouTubeVideoPlayer" style="pointer-events:none;"></div>
-    </div>
-    <!-- Rest of the page starts here -->
-        <div class="row white">
+<html lang="en">
+<head>
+	<title>Core Systems</title>	
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />	
+</head>
+<body>
+	<div class="wrapper">
+		<div class="fullWidth">
+			<div class="navbar-fixed" id="top">
+				<nav class="transparent-nav z-depth-0"> <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+					<a class="brand-logo center white-text" id="main-logo">Core Systems</a>
+				</nav>
+			</div>	
+			<div class="carousel-arrow">
+				<div class="left-arrow"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+				<div class="right right-arrow"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+			</div>
+			<div class="videocarousel carousel">
+				<div class="carousel-item" href="#one!"  >
+				<div id="muteYouTubeVideoPlayer1" class="hide-on-small-only" style="pointer-events:none;"></div>
+				<img src="img/c1.jpg" class="img-responsive show-on-small hide"/>	
+				</div>
+				<div class="carousel-item" href="#two!"  >
+				<div id="muteYouTubeVideoPlayer2" class="hide-on-small-only" style="pointer-events:none;"></div>
+				<img src="img/c2.jpg" class="img-responsive show-on-small hide"/>		
+				</div>
+				<div class="carousel-item" href="#three!"  >
+				<div id="muteYouTubeVideoPlayer3" class="hide-on-small-only" style="pointer-events:none;"></div>
+				<img src="img/c3.jpg" class="img-responsive show-on-small hide"/>	
+				</div>
+			</div>			
+		</div>
+	</div>	
+	
+<div id="main-body" class="row initial-background-setting">
+	<div class="col s12 m8 l8 xl8 offset-m2 offset-l2 offset-xl2 " >
+		<div class="aboutSystem">
+			<div class="aboutUs  common-light-background ">
+			     <h3>About Us</h3>
+			     <p>With a vision to bring the best of the world to the masses, Core Systems Incorporated created Converged Reality – A patent pending platform that allows users to see augmented objects within a virtual environment.</p>
+			     <p>This platform will allow users to see exhibits inside the Metropolitan Museum of Art while they are relaxing on the beach in the Bahamas, enjoying a virtual tour of New York City.</p>
+			     <p>Core Systems Incorporated is a company that is focused on converging realities between the Virtual world and the Augmented world. Headquartered in Canada, the company boasts a development subsidiary in India that employs an extremely talented and experienced development team.</p>
+			     <p>Our first product line is extremely versatile and spans three separate applications – Tourism, Social Media and Real Estate.  We have painstakingly ensured the user friendliness of our products, to eliminate the need for highly technical skills, to deploy our products and make your sites CoReSy enabled.</p>
+			</div>
             
-            <div class="col s10 m10 l10 xl10 offset-s1 offset-m1 offset-l1 offset-xl1" id="about-us">
-                <span class="flow-text">aura is a start-up company that is focused on developing applications that will open augmented reality to the masses and seamlessly allow communication between the physical and virtual worlds. Our team is comprised of business and research professionals as well as software and hardware developers.
-                    We believe that AR/VR has a bright future, but in order to unlock that future, technologies have to be simple to use, easy to distribute, and computationally efficient. The products that our team are building do just that.</span>
-            </div>
+			<div class="aboutProduct  common-light-background ">
+			     <h3>Products & Services</h3>
+			     <h5>The Magic Circle: </h5>
+			     <p>Our Hardware product that provides best in class, 3D position data in real time, including areas with minimal to zero cell network coverage. Critical placement of the 3rDi, allows users to capture their objects within range of The Magic Circle, assigning each object under that magic circle, a unique identifier associated with it.</p>
+			     <h5>3rDi:</h5>
+			     <p>The mobile app for Android and iOS for capturing and viewing objects and associating assets to the objects as well as the Web application to edit and upload the objects to the cloud. The 3rDi application allows users to take images, videos and 360 videos of objects, associate other image, audio, video and URL assets with the captured object and save the object.  The mobile application is free of charge for the individual users while there is a nominal charge for the business user for the mobile application with the web backend application.</p>
+			     <p>The Web application allows business users to edit the object, associate and edit the assets to the objects, add monetization tags and link to payment gateways and save the object with all its location metadata to the cloud.</p>
+			     <p>An additional tab on the 3rDi mobile app allows users to recognize their position with respect to any deployed Magic Circles and view and download any object and its associated assets within range of that Magic Circle.</p>
+			</div>
+		</div>
         
-            <div class="col s10 m10 l10 xl10 offset-s1 offset-m1 offset-l1 offset-xl1" id="products">
-                <span class="flow-text">At aura our goal is to make technology easy to use and seamlessly integrate the physical and virtual worlds. The technology stack that we have created is extremely versatile. Apps based on our technology have applications in many different fields:
-                    Safety and Security - best in class 3D positional data, in real time, even in locations with low cellphone coverage.
-                    Parks, Zoos, and Museums - interactive tours that can be experienced in both the real and virtual worlds.
-                    Everyone Else - let your imagination run wild with a simple web interface that makes it easy to create content and augment the world around you.
-                    If you have any questions about our technology and how it may be of benefit to your business or institution, please don't hesitate to contact us.</span>
-            </div>
+		<div class="abouTeam ">
+            <H3>Team slider</H3>
+			  <div class="carousel" id="teamCarousel">
+				<a class="carousel-item" href="#one!">
+					<img src="img/m1.jpg">
+					<h5>Member 1</h5>
+					<p>This is Member 1</p>
+				</a>
+				<a class="carousel-item" href="#two!">
+					<img src="img/m2.jpg">
+					<h5>Member 2</h5>
+					<p>This is Member 2</p>
+				</a>
+				<a class="carousel-item" href="#three!">
+					<img src="img/m3.jpg">
+					<h5>Member 3</h5>
+					<p>This is Member 3</p>
+				</a>
+			  </div>
+		</div>	
         
-        
-            <div class="col s10 m10 l10 xl10 offset-s1 offset-m1 offset-l1 offset-xl1" id="contact">
-                <span class="flow-text">aura Technologies Inc. is based in Saskatoon, Saskatchewan, Canada. If you would like to learn more about our company or products please get in touch with us using the form below.</span>
-            </div>
+		<div class="contactDiv  common-light-background ">
+			<h3>Contact us</h3>
+				<div id="map" style="width:400px;height:400px;background:yellow;"></div>
+				<div class="dialer">
+					<div class="row">
+					<a href="mailto:lorem@coresolutions.com?Subject=Hello" target="_top"class="btn waves-effect waves-light indigo"><span class="hide-on-med-and-down">Email us</span> <i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+					</div>
+					<div>
+					<a href="tel:91-7838020998" class="btn waves-effect waves-light green"><span class="hide-on-med-and-down">Call us</span> <i class="fa fa-phone" aria-hidden="true"></i></a>
+					</div>	
+				</div>
+		</div>
+	</div>	
+</div>	
+      
+
+<footer class="page-footer common-light-background">
+  <div class="container ">
+	<div class="row ">
+    	<div class="col s12 socialIcons center" >
+			<a href="#" class="facebook">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+			</a>
+			<a href="#" class="twitter">
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+			</a>	
+			<a href="#" class="linkedin">
+				<i class="fa fa-linkedin" aria-hidden="true"></i>
+			</a>		
+			<a href="#" class="googleplus">	
+				<i class="fa fa-google-plus" aria-hidden="true"></i>
+			</a>		
+			<a href="#" class="instagram">	
+				<i class="fa fa-instagram" aria-hidden="true"></i>
+			</a>	
+			<a href="#" class="youtube">
+				<i class="fa fa-youtube" aria-hidden="true"></i>
+			</a>	
         </div>
-    
-        <!-- Scripts for youtube video embedding DO NOT MODIFY-->
-        <script async src="https://www.youtube.com/iframe_api"></script>
-        <script>
+	</div>
+  </div>
+  <div class="footer-copyright">
+	<div class="container logo-text-color">
+	<center>© 2017 Copyright Core Systems</center>
+	</div>
+  </div>
+</footer>
+	
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>	
+<script async src="https://www.youtube.com/iframe_api"></script>	
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+	
+<script>
+function myMap() {
+var mapOptions = {
+    center: new google.maps.LatLng(12.904781, 74.836354),
+    zoom: 14,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+}
+	
+      $(document).ready(function(){
+		  
+		$(document).on('scroll', function (e) { updateColor(); });
+		  
+		  function updateColor() {
+		      var o = $(document).scrollTop() / 30;
+		      if (o > 1.000) {
+		          $("nav").removeClass("transparent-nav");
+		          $("nav").addClass("white-nav");
+                  $("#main-logo").removeClass("white-text");
+		          $("#main-logo").addClass("logo-text-color");
+
+		      } else {
+		          $("nav").removeClass("white-nav");
+		          $("nav").addClass("transparent-nav");
+                  $("#main-logo").removeClass("logo-text-color");
+		          $("#main-logo").addClass("white-text");
+
+		      }
+            var scroll_pos=$(document).scrollTop();
+            var docHeight=$(document).height();
+            var percent=Math.round((scroll_pos/docHeight)*100);
+            if (percent>=0 &&  percent<=20)
+                {
+                    $("#main-body").css("background-image",'url(../img/20-percent.jpg)');
+                }
+            else if (percent>20 && percent<=30) 
+                {
+                    $("#main-body").css("background-image",'url(../img/30-percent.jpg)');
+                }
+            else if (percent>30 && percent<=40) 
+                {
+                    $("#main-body").css("background-image",'url(../img/40-percent.jpg)');
+                }
+             else if (percent>40 && percent<=50) 
+                {
+                    $("#main-body").css("background-image",'url(../img/50-percent.jpg)');
+                }
+              else if (percent>50 && percent<=53) 
+                {
+                    $("#main-body").css("background-image",'url(../img/60-percent.jpg)');
+                }
+               else if (percent>53 && percent<=60 ) 
+                {
+                    $("#main-body").css("background-image",'url(../img/70-percent.jpg)');
+                }
+            else if (percent>60  ) 
+                {
+                    $("#main-body").css("background-image",'url(../img/60-percent.jpg)');
+                }
+        }  
+
+		  
+		$('.videocarousel').carousel();
+        // $('.videocarousel').carousel({fullWidth: true});
+        window.setInterval(function(){$('.videocarousel').carousel('next')},10000)
+		
+        $('#teamCarousel').carousel();
+        $('#teamCarousel.carousel-slider').carousel({fullWidth: false});
+        window.setInterval(function(){$('#teamCarousel').carousel('next')},3000);
+			  
+      });
+	  
         function onYouTubeIframeAPIReady() 
         {
             var player;
-            player = new YT.Player('muteYouTubeVideoPlayer', 
+
+            player = new YT.Player('muteYouTubeVideoPlayer1', 
             {
-                videoId: '5gF4tyf-zVo', // YouTube Video ID
+                videoId: 'Q1rhoq77dcY', // YouTube Video ID
                 playerVars: {
-                autoplay: 1,        // Auto-play the video on load
-                controls: 0,        // Show pause/play buttons in player
-                showinfo: 0,        // Hide the video title
-                modestbranding: 1,  // Hide the Youtube Logo
-                loop: 1,            // Run the video in a loop
-                fs: 1,              // Hide the full screen button
-                cc_load_policy: 1, // Hide closed captions
-                iv_load_policy: 1,  // Hide the Video Annotations
-                autohide: 1         // Hide video controls when playing
+                autoplay : 1,        // Auto-play the video on load
+                controls : 0,        // Show pause/play buttons in player
+                showinfo : 0,        // Hide the video title
+                modestbranding : 1,  // Hide the Youtube Logo
+                loop : 1,            // Run the video in a loop
+                fs : 1,              // Hide the full screen button
+                cc_load_policy : 1, // Hide closed captions
+                iv_load_policy : 1,
+                disablekb : 1,
+                autohide : 1,
+                iv_load_policy : 3,
+                rel : 0 
                 },
                 events: 
                 {
@@ -108,8 +236,63 @@
                         }
                 }
             });
-        }
-        function vidRescale(player)
+
+            player2 = new YT.Player('muteYouTubeVideoPlayer2', 
+            {
+                videoId: '5gF4tyf-zVo', // YouTube Video ID
+                playerVars: {
+                autoplay : 1,        // Auto-play the video on load
+                controls : 0,        // Show pause/play buttons in player
+                showinfo : 0,        // Hide the video title
+                modestbranding : 1,  // Hide the Youtube Logo
+                loop : 1,            // Run the video in a loop
+                fs : 1,              // Hide the full screen button
+                cc_load_policy : 1, // Hide closed captions
+                iv_load_policy : 1,
+                disablekb : 1,
+                autohide : 1,
+                iv_load_policy : 3,
+                rel : 0 
+                },
+                events: 
+                {
+                onReady: function(e) 
+                        {
+                            e.target.mute();
+                            vidRescale(player2);
+                        }
+                }
+            });
+
+            player3 = new YT.Player('muteYouTubeVideoPlayer3', 
+            {
+                videoId: 'ftPOy4yUGMQ', // YouTube Video ID
+                 playerVars: {
+                autoplay : 1,        // Auto-play the video on load
+                controls : 0,        // Show pause/play buttons in player
+                showinfo : 0,        // Hide the video title
+                modestbranding : 1,  // Hide the Youtube Logo
+                loop : 1,            // Run the video in a loop
+                fs : 1,              // Hide the full screen button
+                cc_load_policy : 1, // Hide closed captions
+                iv_load_policy : 1,
+                disablekb : 1,
+                autohide : 1,
+                iv_load_policy : 3,
+                rel : 0 
+                },
+                events: 
+                {
+                onReady: function(e) 
+                        {
+                            e.target.mute();
+                            vidRescale(player3);
+                        }
+                }
+            });            
+        }	
+	  
+	  function vidRescale(player)
         {
             var w = $(window).width()+200,
             h = $(window).height()+200;
@@ -122,7 +305,22 @@
                 player.setSize(h/9*16, h);
             }
         }
-        </script>
-</main>
-<footer></footer>    
+	
+	$(document).ready(function(){
+		$('.right-arrow').click(function(){
+			$('.carousel').carousel('next');
+		});	
+		$('.left-arrow').click(function(){
+			$('.carousel').carousel('prev');
+		});		
+		
+		setTimeout(function(){ 
+			$('.left-arrow, .right-arrow').css('display','block');
+		}, 15000);
+
+	});	
+	
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbXTwwP1vDZyK_bsb3eXuinh-duXgkS18&callback=myMap"></script>		
+  </body>
 </html>
